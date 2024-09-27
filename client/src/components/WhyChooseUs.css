@@ -8,22 +8,19 @@
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
-  
-
 }
 
 .features {
-  display: flex;
-  justify-content: space-around;
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between the cards */
   margin-top: 30px;
 }
 
 .feature {
-  margin: 20px;
   padding: 20px;
   background: #e7e7e7;
   border-radius: 8px;
-  
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for feature cards */
 }
@@ -32,12 +29,8 @@
   transform: translateY(-5px); /* Lift effect on hover */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-/* h3{
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-} */
-p{
+
+p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
