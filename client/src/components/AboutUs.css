@@ -1,0 +1,45 @@
+.about-us {
+  padding: 50px;
+  text-align: center;
+  background-color: #ffffff; /* White background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  flex-direction: column; /* Stacking skills vertically */
+}
+
+.skill {
+  margin: 20px;
+  text-align: left;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #007bff; /* Bright blue for progress */
+  border-radius: 5px;
+  transition: width 0.4s ease; /* Smooth transition for the progress bar */
+}
