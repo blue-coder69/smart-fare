@@ -1,10 +1,9 @@
 .hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to bottom right, #007bff, #0056b3); /* Gradient background */
+  /* padding: 100px 20px; */
   color: white;
   position: relative;
   overflow: hidden;
+  min-height: 80vh;
 }
 
 .hero-title {
@@ -18,42 +17,25 @@
   margin-bottom: 20px;
 }
 
-.cta-button {
+.btn {
   background-color: #ffd700; /* Bright gold */
   color: #333;
   padding: 12px 24px;
   border: none;
   border-radius: 5px;
+  max-width: 150px;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for button */
+  margin-left: 7vw;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Transition for button */
 }
 
-.cta-button:hover {
+.btn:hover {
   background-color: #ffc107; /* Darker gold on hover */
+  color: white;
   transform: scale(1.05); /* Slight scale effect on hover */
 }
 
-.ride-options {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.option {
-  background-color: #28a745; /* Green */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin: 0 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for options */
-}
-
-.option:hover {
-  background-color: #218838; /* Darker green on hover */
-  transform: scale(1.05); /* Scale effect on hover */
-}
 
 /* Keyframes for animations */
 @keyframes fadeIn {
@@ -67,13 +49,10 @@
   }
 }
 .cards {
-  padding-left: 600px;
-  padding-right: 40%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  flex-direction: column;
 }
 
 /* Location and Destination inputs with a border-radius, shadow, and hover effect */
@@ -83,8 +62,10 @@
   width: 300px; /* Set a width for better alignment */
   border: 2px solid #ccc;
   border-radius: 8px; /* Adds rounded corners */
-  padding: 10px;
+  padding: 2px;
   font-size: 1rem;
+  margin: 15px;
+  margin-top: 20px;
   transition: all 0.3s ease; /* Smooth transition for hover and focus effects */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
@@ -111,10 +92,31 @@ input::placeholder {
   width: 80px;
   height: 80px;
 }
-h1{
-  color: black;
+.cards h1{
+  color: white;
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
 }
-p{
-  
-  color: black;
+.cards p{
+  color: white;
+  font-weight: 400;
+  max-width: 35vw;
+}
+
+.Image img{
+  width: 100vw;
+  filter: brightness(50%);
+  position: relative;
+  z-index: -1;
+}
+
+.right{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left{
+  margin: 50px 50px 0 0;
 }
