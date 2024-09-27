@@ -3,7 +3,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
+  padding: 5px 50px;
   background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
   color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -42,4 +42,5 @@
 .navbar .logo{
   font-size: 30px;
   font-weight: 800;
+  padding-top: 10px;
 }
