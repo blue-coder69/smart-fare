@@ -4,10 +4,18 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© 2024 Smart Fare. All rights reserved.</p>
-      <div className="contact-info">
-        <p>310-437-2766 | unreal@outlook.com</p>
-        <p>706 Campfire Ave. Meriden, CT 06450</p>
+      <div className='container'>
+        <div className="contact-info">
+          <div className="text">
+            Smart Fare
+          </div>
+          <div className='contact-link'>
+            <a href='#contact'>Contact Us</a>
+          </div>
+        </div>
+        <div className='copyright'>
+          &#169;All Rights Reserved | We Don't Own the Cabs, Just the Comparison! 2024 Smart Fare.
+        </div>
       </div>
     </footer>
   );
