@@ -66,3 +66,55 @@
     transform: translateY(0);
   }
 }
+.cards {
+  padding-left: 600px;
+  padding-right: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+/* Location and Destination inputs with a border-radius, shadow, and hover effect */
+.location,
+.destination {
+  height: 50px;
+  width: 300px; /* Set a width for better alignment */
+  border: 2px solid #ccc;
+  border-radius: 8px; /* Adds rounded corners */
+  padding: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease; /* Smooth transition for hover and focus effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.location:hover,
+.destination:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds more shadow on hover */
+}
+
+.location:focus,
+.destination:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Focus glow effect */
+}
+
+/* Placeholder styles */
+input::placeholder {
+  font: 1rem/3 sans-serif;
+  color: black; /* Placeholder color */
+
+}
+.Image{
+  width: 80px;
+  height: 80px;
+}
+h1{
+  color: black;
+}
+p{
+  
+  color: black;
+}

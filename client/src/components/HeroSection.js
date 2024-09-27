@@ -1,16 +1,21 @@
 import React from 'react';
 import './HeroSection.css';
+import captainImage from './Captain.jpeg'; // Import the image
 
 const HeroSection = () => {
   return (
     <section className="hero">
-      <h1>Transparent. Safe. Reliable</h1>
-      <p>Lorem ipsum dolor sit amet consectetur. Nulla vel amet vivamus pretium.</p>
-      <button className="cta-button">Book Now</button>
-      <div className="ride-options">
-        <button className="option">Local Taxi</button>
-        <button className="option">Rental</button>
-        <button className="option">Outstation</button>
+      <div className='Image'>
+      <img src={captainImage} alt="Captain" /> {/* Use the imported image */}
+      </div>
+      <div className='cards'>
+        <h1>Compare. Choose. Go.</h1>
+        <p>Seamlessly compare cab fares across platforms and book the best deal in seconds</p>
+        <input type='text' placeholder='Enter Your Location' className='location' />
+        <input type='text' placeholder='Enter Destination' className='destination' />
+      </div>
+      <div className='btn'>
+        <button>See The fares</button>
       </div>
     </section>
   );

@@ -4,6 +4,9 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <nav className="navbar">
+      
+       
+     
       <div className="logo">Smart Fare</div>
       <ul className="nav-links">
         <li><a href="#home">Home</a></li>
